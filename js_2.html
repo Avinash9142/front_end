@@ -1,0 +1,37 @@
+<!-- Simple Calculator Ask the user for two numbers and an operator (+, -, *, /) using prompt). Perform the calculation and show the result using alert. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple calculation</title>
+</head>
+<body>
+    <script>
+        let num=Number(prompt(("Enter first number ")));
+        let num_1=Number(prompt(("Enter second number ")));
+        let calculation=prompt(("Enter an operator "));
+        if(calculation== '+')
+    {
+        let sum=Number(num+num_1);
+        console.log(sum);
+        alert(sum);
+    }
+    else if(calculation=='-'){
+        let diff=Number(num-num_1);
+        console.log(diff);
+        alert(diff);
+    }
+    else if( calculation =='*'){
+        let product=Number(num*num_1);
+        console.log(product);
+        alert(product);
+    }
+    else if(calculation=='/'){
+        let divide=Number(num/num_1);
+        console.log(divide);
+        alert(divide);
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- Find the Largest of Three Numbers Take three numbers from the user and display the largest one. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest</title>
+ </head>
+ <body>
+    <script>
+        let num_1=Number(prompt("Enter the First number"));
+        let num_2=Number(prompt("Enter the Second number"));
+        let num_3=Number(prompt("Enter the Third number"));
+        if(num_1>num_2){
+            if(num_1>num_3){
+                alert(num_1+" is the greatest");
+            }
+        }
+        else if(num_2>num_3){
+            if(num_2>num_1){
+                alert(num_2 +" is the greatest");
+            }
+        }
+        else{
+            alert(num_3 +" is the greatest");
+        }
+    </script>
+ </body>
+ </html>

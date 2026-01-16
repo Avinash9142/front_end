@@ -1,0 +1,27 @@
+<!-- Check if a Number is Palindrome Take a number and check if it reads the same forward and backward (example: 121 → yes, 123 → no).-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+ </head>
+ <body>
+    <script>
+        let n=Number(prompt("Enter number to check if palindrome or not "));
+        let a;
+        let b=0;
+        while(n>0){
+            a=n%10;
+            b=b*10+a;
+            n=n/10|0;
+        }
+         if(n==b){
+                alert(b+" yes");
+            }
+            else{
+                alert(b+ " No");
+            }
+    </script>
+ </body>
+ </html>
